@@ -1,0 +1,226 @@
+* {
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+.navbar {
+	background-color: #5BC5A7;
+	border: none;
+}
+
+li {
+	list-style: none;
+}
+
+.navbar-brand {
+	font-size: 20px;
+	font-family: "Times New Roman", Times, serif;
+	letter-spacing: 9px;
+	font-weight: normal;
+}
+
+.span {
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.right-span {
+	margin: 10px;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.glyphicon-home,
+.glyphicon-flag,
+.glyphicon-list {
+	margin-right: 10px;
+}
+
+.button-paragraph {
+	margin: 10px;
+}
+
+.right-div {
+	margin: 10px;
+}
+
+.right-div-btn {
+	font-size: 12px;
+	padding: 6px;
+	background-color: #EEEEEE;
+	border: 1px solid #DDDDDD;
+}
+
+.right-div-btn span {
+	font-size: 15px;
+	color: #999999;
+}
+
+.right-div-paragraph {
+	color: #999999;
+	margin-top: 18px;
+	font-weight: bold;
+}
+
+.right-btn {
+	color: #C1C1C1;
+	font-size: 15px;
+	background-color: transparent;
+	padding: 6px;
+	border: 1px solid #EFEFEF;
+	border-radius: 5px;
+}
+
+.right-btn:hover {
+	color: #999999;
+}
+
+.list-image {
+	height: 40px;
+	width: 30px;
+}
+
+.left li {
+	list-style: none;
+	color: #999999;
+	margin: 10px;
+	margin-left: 25%;
+	font-size: 15px;
+}
+
+.left li:hover {
+	background-color: #EEEEEE;
+}
+
+.list, .icon {
+	color: #999999;
+}
+
+.groups {
+	background-color: #F6F6F6;
+}
+
+.groups p {
+	font-size: 12px;
+	padding: 2px;
+}
+
+.groups span {
+	float: right;
+}
+
+.middle-li span {
+	color: #5BC5A7;
+}
+
+.social-btn {
+	width: 40%;
+	padding: 2px 5px;
+	color: white;
+	border-radius: 4px;
+}
+
+.facebook {
+	background-color: #4E69A2;
+	border: 1px solid #415580;
+}
+
+.twitter {
+	background-color: #53A3FF;
+	border: 1px solid #4580C5;
+}
+
+.red {
+	color: #FF652F;
+}
+
+.navbar-right {
+	margin-right: 50px;
+}
+
+.navbar-right:hover {
+	background-color: #16a085;
+}
+
+.btn {
+	background-color: #FF652F;
+	color: #FFFFFF;
+	border: 1px solid #BF4B23;
+	font-size: 15px;
+	padding: 8px;
+}
+
+.button {
+	margin-bottom: 10px;
+}
+
+.settle {
+	background-color: #5BC5A7;
+	border: 1px solid #44937D;
+}
+
+.modal-header {
+	background-color: #5CC5A7;
+	color: white;
+}
+
+.main-div-btn {
+	background-color: #EEEEEE;
+	border: 1px solid #999999;
+	border-radius: 10px;
+}
+
+.main-div {
+	margin-top: 10px;
+	border-bottom: 1px solid #DDDDDD;
+}
+
+.middle-div {
+	border: 1px solid #DDDDDD;
+}
+
+.add-btn {
+	margin-left: 30%;
+}
+
+input {
+	margin-top: 10px;
+}
+
+.input {
+	width: 100%;
+	font-size: 15px;
+	border: none;
+	border-bottom: 1px dotted #DDDDDD;
+}
+
+.modal-dialog {
+	width: 30%;
+}
+
+.middle {
+	border: 2px dotted #DDDDDD;
+	border-radius: 10px;
+	color: #1abc9c;
+}
+
+.toggle {
+	border-left: 1px solid #E55A2A;
+}
+
+.toggle-menu li {
+	margin: 10px;
+}
+
+.toggle-menu li button {
+	margin: 10px;
+}
+
+.date {
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.close:hover {
+	color: red;
+}

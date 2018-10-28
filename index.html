@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Split Bills</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script type="text/javascript" src="resources/js/code.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse" style="margin-bottom: 0; border-radius: 0">
+        <div class="container-fluid">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#" style="color: white; margin-left: 50px;">SPLIT BILLS</a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color: white;">Mukesh Kumar &nbsp;<span class="caret"></span></a>
+                    <ul class="dropdown-menu menu">
+                      <li class="menu"><a href="#">Your Acount</a></li>
+                      <li><a href="#">Create Group</a></li>
+                      <li><a href="#">Fairness Calculator</a></li>
+                      <li><a href="#">Log Out</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="row">
+        <div class="col-sm-3 left">
+            <ul>
+                <li class="list"><a href="#" class="icon"><span class="glyphicon glyphicon-home"></span></a>Dashboard</li>
+                <li class="list" style="color: #FF652F;"><a href="#" class="icon red"><span class="glyphicon glyphicon-flag"></span></a>Recent Activity</li>
+                <li class="list"><a href="#" class="icon"><span class="glyphicon glyphicon-list"></span></a>All Expences</li>
+            </ul>
+            <ul>
+                <li class="groups"><p>GROUPS<span><b>+</b>add</span></p></li>
+                <li class="middle-li"><span class="glyphicon glyphicon-tag"><b>Aldea A4-603</b></span></li>
+                <li class="groups"><p>FRIENDS<span><b>+</b>add</span></p></li>
+                <li><span class="ion-person">Rajesh</span></li>
+                <li><span class="ion-person">Ayush</span></li>
+            </ul>
+            <ul>
+                <li>Invite friends</li>
+                <li><input type="text" name="text" placeholder="Enter an email address"><button>Send Invite</button></li>
+                <li>
+                    <button class="social-btn facebook ion-social-facebook">Share</button>
+                    <button class="social-btn twitter ion-social-twitter">Tweet</button>
+                </li>
+            </ul>
+        </div>
+        <div class="col-sm-6 middle-div">
+            <div class="middle-header">
+                <h3><b>Aldea A4-603</b>
+                    <div class="btn-group add-btn">
+                        <button type="button" class="btn" data-toggle="modal" data-target="#myModal">Add a Bill</button>
+                        <button type="button" class="btn dropdown-toggle toggle" data-toggle="dropdown">
+                          <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu toggle-menu">
+                            <li align="center">
+                                <input type="text" name="input">
+                                <button>Add</button>
+                                <p style="font-size: 10px;">Example: 4/15 Electric bill $80</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="btn settle">Settle Up</button>
+                </h3>
+            </div>
+
+            <div class="display">
+                <ul id="display">
+
+                </ul>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <p class="button-paragraph">
+                <button class="glyphicon glyphicon-align-justify right-btn" data-toggle="tooltip" data-placement="bottom" title="Balances"></button>
+                <button class="glyphicon glyphicon-list-alt right-btn" data-toggle="tooltip" data-placement="bottom" title="Upcoming Bills"></button>
+                <button class="glyphicon glyphicon-stats right-btn" data-toggle="tooltip" data-placement="bottom" title="Trends"></button>
+                <button class="glyphicon glyphicon-comment right-btn" data-toggle="tooltip" data-placement="bottom" title="Whiteboard"></button>
+                <button class="glyphicon glyphicon-cog right-btn" data-toggle="tooltip" data-placement="bottom" title="Settings"></button>
+            </p>
+
+            <div class="right-div">
+                <p class="right-div-paragraph">GROUP BALANCES</p>
+                <button class="right-div-btn">Simplify debts is <b style="color: blue;">ON&nbsp;</b>&nbsp;<span class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-placement="left" title="This setting automatically combines debts to reduce the total number of repayments between group members.For example, if you owe Anna $10 and Anna owes Bob $10, a group with simplified debts will tell you to pay Bob $10 directly."></span></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">x</button>
+                    <h4 class="modal-title">Add a Bill</h4>
+                </div>
+                <div class="main-div" align="center">
+                    <p>With <b>you</b> and &nbsp;
+                        <button class="main-div-btn">All of Aldea A4-603 &nbsp;<span class="glyphicon glyphicon-remove"></span></button>
+                    </p>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="resources/images/category.png">
+                        </div>
+                        <div class="col-sm-8" align="left">
+                            <input type="text" class="input" name="input" id="description" placeholder="Enter a description">
+                            <input type="text" class="input" name="input" id="amount" placeholder="₹ 0.00">
+                        </div>
+                    </div>
+                    <p align="center">Paid by <button class="middle">You</button>and split<button class="middle">equally</button></p>
+                    <p align="center">(₹0.00/person)</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal" onclick="saveInput()">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
